@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% block body %}
+<section id="home" class="home">
+  <div class="home-text fade-text">
+    <a href="/" class="back-home">Back to Home</a>
+    <h2 class="home-title">Restaurant Review</h2>
+    <span class="home-subtitle">Using ML(NPL) testing wheather the review is Positive or Nagetive</span>
+  </div>
+</section>
+
+<div class="container-lg my-5 py-3">
+  <h2 style="color: #eeeeee">Enter Your Review About Food:</h2>
+  <div>
+    <form method="post">
+      <div class="form-floating">
+        <textarea class="form-control text-black" placeholder="Leave a comment here" name="comment"
+          style="height: 80px"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary my-2">Submit</button>
+    </form>
+
+    <!-- Result will be displayed here -->
+    <div id="result"></div>
+  </div>
+</div>
+
+<section class="post-content container-lg">
+  <h2 class="sub-heading">Introduction of project:</h2>
+  <p class="post-text">
+    With the growing popularity of restaurant review websites and social media
+    platforms, customers can easily share their experiences and opinions about a
+    particular restaurant with the world. However, reading through hundreds or
+    even thousands of reviews to determine whether a restaurant is worth
+    visiting can be a time-consuming and overwhelming task.
+  </p>
+  <p class="post-text">
+    This is where natural language processing (NLP) using machine learning (ML)
+    techniques can be applied to analyze restaurant reviews and provide a
+    sentiment score indicating whether a review is positive or negative.
+  </p>
+  <h2 class="sub-heading">What is Sentiment analysis?</h2>
+  <p class="post-text">
+    Sentiment analysis, also known as opinion mining, is a NLP technique used to
+    extract subjective information from text. It involves analyzing text data to
+    determine the sentiment or opinion expressed by the writer, which can be
+    positive, negative, or neutral.
+  </p>
+  <p class="post-text">
+    Sentiment analysis can be applied to a wide range of text data, including
+    social media posts, product reviews, customer feedback, news articles, and
+    more. The goal of sentiment analysis is to automatically classify the
+    sentiment of a piece of text, without the need for human intervention.
+  </p>
+</section>
+{% endblock body %}
